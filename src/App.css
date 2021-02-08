@@ -1,38 +1,181 @@
-.App {
+body{
+  background: #20232A;
+}
+
+.logo{
+  position: absolute;
+  width: 512px;
+  height: 512px;
+  left: 60px;
+  top:5px;
+  filter: drop-shadow(0px 4px 250px #61DAFB);
+}
+
+.title{
+  position: absolute;
+  width: 342px;
+  height: 89px;
+  left:185px;
+  top:400px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 88px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+
+  text-shadow: 0px 4px 75px rgba(255,255,255 ,0.25);
+
+}
+
+.add-todo{
+  position: absolute;
+  width:256px;
+  height:60px;
+  left: 700px;
+  top: 20px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  color: #FFFFFF;
+}
+
+.input-text{
+  position: absolute;
+  width:344px;
+  height: 40px;
+  left:700px;
+  top: 150px;
+  font-size: 20px;
+  border: none;
+
+  background: #FAFAFA;
+  box-shadow: 0px 4px 105px 29px rgba(255,255,255,0.25);
+  border-radius: 10px; 
+}
+
+input:focus{
+  outline: none;
+}
+
+.add-btn{
+  position: absolute;
+  width:150px;
+  height: 43px;
+  left :1060px;
+  top:148.5px;
+  background-color: #61DAFB;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 20px;
+  border-radius: 10px;
+  text-align: 20px;
+  border: none;
+  box-shadow: 0px 4px 105px #5DCEEE;
+}
+
+button:focus{
+  outline: none;;
+}
+
+.add-btn::after{
+  content: "";
+  background: #90EE90;
+  display: block;
+  position: absolute;
+  transition: all 0.8s;
+}
+
+.add-btn:active:after{
+  padding: 0;
+  margin:0;
+  opacity: 1;
+  transition: 0s;
+}
+
+.todo-list{
+  position:absolute;
+  left:700px;
+  top:190px;
+  width: 445px;
+  height: 40px;
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Poppins",serif;
+  color: #FFFFFF;
+  font-size: 40px;
+  
+}
+
+.btn{
+  width: fit-content;
+  height: max-content;
+  position: absolute;
+  background-color: #FF0000;
+  font-family: "Poppins",serif;
+  font-size: 30px;
+  border-radius: 10px;
   text-align: center;
+  color: #FFFFFF;
+  padding: 10px;
+  border: none;
+  top:10px;
+  right: 20px;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn:focus{
+  outline: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.li{
+  
+  text-align: center;
+  list-style-position: inside;
+  font-family: "Poppins",serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #FFFFFF;
+  list-style-type: none;
+  min-width: 125px;
+  min-height: 35px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.frame{
+  padding: 10px;
+  padding-top: 5px;
+  display: block;
+  position:absolute;
+  width : 490px;
+  height : 76px;
+  top : 300px;
+  left: 675px;
+  overflow: visible;
+  background-color: #0a0f10;
+  border-radius: 10px;
+  margin-left: 25px;
+  display: table-cell;
 }
 
-.App-link {
-  color: #61dafb;
+.Checkbox{
+  position:absolute;
+  margin-top: 14px;
+  left: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content{
+  font-size: 30px;
+  font-weight: 300;
+  position: absolute;
+  top: 47%;
+  left: 18%;
+  margin: -25px 0 0 -25px;
 }
